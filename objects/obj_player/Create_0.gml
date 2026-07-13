@@ -1,9 +1,12 @@
 #region Variáveis
 
 // Variáveis de velocidade do player
-vel = 3;
+vel = 2;
 vel_h = 0;
 vel_v = 0;
+
+// Força do bulo do player
+jump = 4.5;
 
 // Aplica grafidade no player
 gravity = 0.1;
@@ -44,7 +47,7 @@ controles = function()
 	{
 		// Se colitir com uma plataforma ele bula
 		var _col = place_meeting(x, y, obj_plat_1);
-		if (_col) vspeed = -5;
+		if (_col) vspeed = -jump;
 	}
 }
 #endregion

@@ -1,7 +1,8 @@
 #region Variáveis
 
 // Velocidade da plataforma
-vel = 2;
+vel = 3;
+vspeed = 1;
 
 #endregion
 
@@ -10,6 +11,7 @@ vel = 2;
 // Faz a plataforma cair depois que o player colidi com ela
 caindo = function()
 {
+	
 	// Checa se o player existe
 	if (instance_exists(obj_player))
 	{
