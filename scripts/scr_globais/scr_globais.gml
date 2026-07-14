@@ -7,9 +7,13 @@ randomise();
 global.roupa = 0;
 
 // Pontos que o jogador fez
-global.pontos = 0;
+global.pontos = 3;
+global.maior_pontuacao = 0;
 // Maior quantiadade de pontos do jogador
 global.recorde = 0;
+
+// Moedas sdo jogo
+global.acai = 0;
 
 #endregion
 
