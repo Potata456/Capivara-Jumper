@@ -8,6 +8,9 @@ vel_v = 0;
 // Força do bulo do player
 jump = 4.5;
 
+tempo_ganha_pontos = game_get_speed(gamespeed_fps);
+timer_ganha_pontos = 0;
+
 // Aplica grafidade no player
 gravity = 0.1;
 
@@ -43,11 +46,34 @@ controles = function()
 	if (x > room_width + _marge) x = -9;
 	
 	// Checa se a velocidade vertical é maior que 0
-	if (vspeed > 0 )
+	if (vspeed > 0)
 	{
 		// Se colitir com uma plataforma ele bula
 		var _col = place_meeting(x, y, obj_plat_1);
 		if (_col) vspeed = -jump;
 	}
 }
+
+// Faz o player ganhar pontos de acordo com a altura atingida
+ganha_pontos = function()
+{
+	if (place_meeting(x, y, obj_plat_1))
+	{
+		if (timer_ganha_pontos <= 0)
+		{
+			timer_ganha_pontos = tempo_ganha_pontos;
+		}
+	}
+	
+	if (timer_ganha_pontos > 0)
+	{
+		timer_ganha_pontos--;
+		global.pontos += 0.1;
+	}
+	else
+	{
+		global.pontos -= 0.1;
+	}
+}
+
 #endregion

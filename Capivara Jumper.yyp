@@ -15,6 +15,7 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Controladores","folderPath":"folders/Objects/Controladores.yy","name":"Controladores","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Plataformas","folderPath":"folders/Objects/Plataformas.yy","name":"Plataformas","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -40,7 +41,7 @@
   "name":"Capivara Jumper",
   "resources":[
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
-    {"id":{"name":"obj_controlador","path":"objects/obj_controlador/obj_controlador.yy",},},
+    {"id":{"name":"obj_controlador_spawn","path":"objects/obj_controlador_spawn/obj_controlador_spawn.yy",},},
     {"id":{"name":"obj_plat_1","path":"objects/obj_plat_1/obj_plat_1.yy",},},
     {"id":{"name":"obj_plat_2","path":"objects/obj_plat_2/obj_plat_2.yy",},},
     {"id":{"name":"obj_plat_3","path":"objects/obj_plat_3/obj_plat_3.yy",},},

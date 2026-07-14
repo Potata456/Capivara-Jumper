@@ -6,8 +6,10 @@ randomise();
 // Para saber qual roupa o plater está
 global.roupa = 0;
 
-// Para saber se o jogo começou
-global.comecou = 0;
+// Pontos que o jogador fez
+global.pontos = 0;
+// Maior quantiadade de pontos do jogador
+global.recorde = 0;
 
 #endregion
 
