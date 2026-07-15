@@ -16,7 +16,7 @@ global.maior_pontuacao = 0;
 global.recorde = 0;
 
 // Moedas do jogo
-global.acai = 100;
+global.acai = 0;
 
 // Destino da transição
 global.destino = noone;
@@ -28,6 +28,14 @@ global.destino = noone;
 function troca_room()
 {
 	room_goto(global.destino);
+}
+
+// Toca som com variação
+function toca_som(_som =  snd_pickup, _var = 0.2)
+{
+	var _pitch = random_range(1 - _var, 1 + _var);
+	
+	audio_play_sound(_som, 0, false, 1, 0, _pitch)
 }
 
 #endregion

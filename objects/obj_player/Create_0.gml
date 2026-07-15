@@ -13,7 +13,7 @@ tempo_ganha_pontos = game_get_speed(gamespeed_fps);
 timer_ganha_pontos = 0;
 
 // Variáceis para saber quando o player deve perder o jogo
-tempo_restart = game_get_speed(gamespeed_fps) * 3;
+tempo_restart = game_get_speed(gamespeed_fps) * 2;
 timer_restart = 0;
 
 // Aplica grafidade no player
@@ -52,11 +52,12 @@ controles = function()
 	
 	// Checa se a velocidade vertical é maior que 0
 	if (vspeed > 0)
-	{
+	{	
 		// Se colitir com uma plataforma ele bula
 		var _col = place_meeting(x, y, obj_plat_1);
 		if (_col)
 		{
+			toca_som(snd_jump);
 			vspeed = -jump;
 			part_poeira();
 		}

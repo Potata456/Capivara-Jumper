@@ -5,6 +5,9 @@ draw_set_valign(1);
 
 var _pos_x = display_get_gui_width() / 2;
 
+// Desenha a placa dos pontos
+draw_sprite_ext(spr_placa, 0, _pos_x, 50, 1.3, 1.8, 0, c_white, 1);
+
 // Desenha a sombra do texto
 draw_set_colour(c_orange);
 draw_text(_pos_x, 53, string(global.pontos) + ".m");
