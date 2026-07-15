@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"capi",
-    "path":"sprites/capi/capi.yy",
+    "name":"spr_capi",
+    "path":"sprites/spr_capi/spr_capi.yy",
   },
   "spriteMaskId":null,
   "visible":true,

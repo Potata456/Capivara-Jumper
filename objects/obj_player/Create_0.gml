@@ -55,7 +55,11 @@ controles = function()
 	{
 		// Se colitir com uma plataforma ele bula
 		var _col = place_meeting(x, y, obj_plat_1);
-		if (_col) vspeed = -jump;
+		if (_col)
+		{
+			vspeed = -jump;
+			part_poeira();
+		}
 	}
 }
 
@@ -119,4 +123,21 @@ restart_jogo = function()
 	}
 }
 
+// Troca aparencia de acordo com a roupa atual
+armario = function()
+{
+	if (global.roupa_atual == 0) sprite_index = spr_capi;
+	else if (global.roupa_atual == 1) sprite_index = spr_boto;
+	else if (global.roupa_atual == 2) sprite_index = spr_taman;
+}
+
+// Cria particula de paeira
+part_poeira = function()
+{
+	instance_create_layer(x, y - 5, "Particulas", obj_part_poeira);
+}
+
 #endregion
+
+// Checa qual a roupa atual do player
+armario();

@@ -1,4 +1,3 @@
-draw_text(20,20, global.acai);
 // Definindo a fonte e alinhando o texto
 draw_set_font(fnt_placar);
 draw_set_halign(1);
